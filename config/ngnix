@@ -1,0 +1,17 @@
+server {
+    listen 80;
+    server_name moshura.efficax.team;
+
+    client_max_body_size 0;
+    charset utf-8;
+
+    index index.html index.htm index.nginx-debian.html;
+    root /var/www/coursework-front/build;
+
+    access_log /var/www/coursework-front/_logs/nginx_access.log;
+    error_log /var/www/coursework-front/_logs/nginx_error.log;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
