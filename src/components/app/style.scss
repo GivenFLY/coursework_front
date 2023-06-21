@@ -1,0 +1,15 @@
+/*If screen size > 800px .app padding = 15%, otherwise 1rem*/
+
+.app {
+    padding: 1rem 1rem;
+    @media (min-width: 800px) {
+        padding: 1rem 15%;
+    }
+}
+
+.container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

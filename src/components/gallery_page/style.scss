@@ -1,0 +1,23 @@
+.gallery{
+    .items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+
+        @media (max-width: 800px) {
+            grid-template-columns: repeat(1, 2fr);
+        }
+
+        @media (min-width: 801px) and (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .picture {
+            & > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

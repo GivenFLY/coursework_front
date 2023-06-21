@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    flex-direction: column;
+
+
+    .inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            margin-right: 1rem;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+
+            & > * {
+                margin: 0;
+            }
+
+            .top {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.footer {
+    border-top: 1px solid #fff2;
+    margin-top: 3rem;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+
+    .info {
+        .name {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .author {
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+        .address {
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+        &>p {
+            margin: 0;
+        }
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+        margin-right: 1rem;
+    }
+}
